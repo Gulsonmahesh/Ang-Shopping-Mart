@@ -12,9 +12,8 @@ import { reducers, metaReducers } from './reducers';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    })
+    StoreModule.forRoot(reducers, {metaReducers}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
