@@ -4,6 +4,7 @@ import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { reducers, metaReducers } from './reducers';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,8 @@ import { reducers, metaReducers } from './reducers';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     StoreModule.forRoot(reducers, {metaReducers}
     )

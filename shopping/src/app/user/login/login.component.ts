@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-
+  email = '';
+  password = '';
   ngOnInit(): void {
+  }
+
+  login(event): boolean {
+    event.preventDefault();
+    alert(this.email);
+    return true;
   }
 
 }
